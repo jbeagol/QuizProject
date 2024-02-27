@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="light.css" id="theme">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- fg -->
+</head>
+<body>
+
+<div class='container start'>
+    <div>
+    <button class="round">
+        <img src="icon.svg" width="50" height="50" alt="Сменить тему" id="pic">
+    </button>
+    </div>
+    <h1 class="header">Quiz</h1>
+    <h3>Установите таймер:</h3>
+    <select name="timer-choice" required="required" id="sel">
+        <option value="">Выберите значение</option>
+        <option value="10">10 секунд</option>
+        <option value="20">20 секунд</option>
+        <option value="30">30 секунд</option>
+        <option value="40">40 секунд</option>
+        <option value="50">50 секунд</option>
+        <option value="60">60 секунд</option>
+    </select>
+    <h3>Выберите категорию вопросов:</h3>
+    <div class="buttons">
+        <div class='start-btn' id="history">История</div>
+        <div class='start-btn' id="math">Математика</div>
+    </div>
+    <div class="container_h3"> </div>
+</div>
+
+<div class='container main'>
+    <h3 class="timer"> </h3>
+    <div class='question'>2 + 2</div>
+    <div class='ans-row'>
+        <div class='answer'>4</div>
+        <div class='answer'>6</div>
+        <div class='answer'>10</div>
+        <div class='answer'>500</div>
+        <div class='answer'>500</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script
+src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js' ></script>
+</body>
+</html>
